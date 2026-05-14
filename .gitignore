@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+package-lock.json
+
+# Editor files
+.vscode/
+*.swp
+
+# Build outputs
+dist/
+build/
+
+# Log files
+*.log

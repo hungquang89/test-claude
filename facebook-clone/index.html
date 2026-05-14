@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon_%28square%29.svg/1024px-Facebook_icon_%28square%29.svg.png" alt="Facebook Logo">
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search Facebook" class="search-input">
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-item">
+                <img src="https://via.placeholder.com/24" alt="Profile" class="nav-icon">
+            </div>
+            <div class="nav-item">
+                <img src="https://via.placeholder.com/24" alt="Home" class="nav-icon">
+            </div>
+            <div class="nav-item">
+                <img src="https://via.placeholder.com/24" alt="Create" class="nav-icon">
+            </div>
+            <div class="nav-item">
+                <img src="https://via.placeholder.com/24" alt="Notifications" class="nav-icon">
+            </div>
+            <div class="nav-item">
+                <img src="https://via.placeholder.com/24" alt="Messages" class="nav-icon">
+            </div>
+            <div class="nav-item">
+                <img src="https://via.placeholder.com/24" alt="Settings" class="nav-icon">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar-left">
+            <div class="sidebar-section">
+                <div class="sidebar-item">
+                    <div class="sidebar-icon">
+                        <img src="https://via.placeholder.com/24" alt="Home">
+                    </div>
+                    <div class="sidebar-text">Home</div>
+                </div>
+                <div class="sidebar-item">
+                    <div class="sidebar-icon">
+                        <img src="https://via.placeholder.com/24" alt="Friends">
+                    </div>
+                    <div class="sidebar-text">Friends</div>
+                </div>
+                <div class="sidebar-item">
+                    <div class="sidebar-icon">
+                        <img src="https://via.placeholder.com/24" alt="Groups">
+                    </div>
+                    <div class="sidebar-text">Groups</div>
+                </div>
+                <div class="sidebar-item">
+                    <div class="sidebar-icon">
+                        <img src="https://via.placeholder.com/24" alt="Watch">
+                    </div>
+                    <div class="sidebar-text">Watch</div>
+                </div>
+                <div class="sidebar-item">
+                    <div class="sidebar-icon">
+                        <img src="https://via.placeholder.com/24" alt="Marketplace">
+                    </div>
+                    <div class="sidebar-text">Marketplace</div>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-title">Shortcuts</div>
+                <div class="sidebar-item">
+                    <div class="sidebar-icon">
+                        <img src="https://via.placeholder.com/24" alt="Group">
+                    </div>
+                    <div class="sidebar-text">My Group</div>
+                </div>
+                <div class="sidebar-item">
+                    <div class="sidebar-icon">
+                        <img src="https://via.placeholder.com/24" alt="Event">
+                    </div>
+                    <div class="sidebar-text">Upcoming Event</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Create Post -->
+            <div class="create-post">
+                <div class="user-avatar">
+                    <img src="https://via.placeholder.com/40" alt="User">
+                </div>
+                <div class="create-post-input">
+                    <textarea placeholder="What's on your mind?" class="post-textarea"></textarea>
+                </div>
+            </div>
+
+            <!-- Post -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img src="https://via.placeholder.com/40" alt="Author" class="post-author-avatar">
+                        <div class="post-author-info">
+                            <div class="post-author-name">John Doe</div>
+                            <div class="post-time">2 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>This is a sample post. It's just a placeholder to show the layout.</p>
+                </div>
+                <div class="post-actions">
+                    <button class="post-btn">Like</button>
+                    <button class="post-btn">Comment</button>
+                    <button class="post-btn">Share</button>
+                </div>
+            </div>
+
+            <!-- Another Post -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img src="https://via.placeholder.com/40" alt="Author" class="post-author-avatar">
+                        <div class="post-author-info">
+                            <div class="post-author-name">Jane Smith</div>
+                            <div class="post-time">5 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Another sample post with some text.</p>
+                </div>
+                <div class="post-actions">
+                    <button class="post-btn">Like</button>
+                    <button class="post-btn">Comment</button>
+                    <button class="post-btn">Share</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+            <div class="sidebar-section">
+                <div class="sidebar-title">Trending</div>
+                <div class="trending-item">
+                    <div class="trending-text">Topic 1</div>
+                    <div class="trending-count">12.5K posts</div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-text">Topic 2</div>
+                    <div class="trending-count">8.2K posts</div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-text">Topic 3</div>
+                    <div class="trending-count">5.7K posts</div>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-title">Friends</div>
+                <div class="friend-item">
+                    <img src="https://via.placeholder.com/40" alt="Friend" class="friend-avatar">
+                    <div class="friend-name">Alice Johnson</div>
+                </div>
+                <div class="friend-item">
+                    <img src="https://via.placeholder.com/40" alt="Friend" class="friend-avatar">
+                    <div class="friend-name">Bob Williams</div>
+                </div>
+                <div class="friend-item">
+                    <img src="https://via.placeholder.com/40" alt="Friend" class="friend-avatar">
+                    <div class="friend-name">Charlie Brown</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

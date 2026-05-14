@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init *)",
+      "Bash(echo \"# Node.js\")",
+      "Bash(echo \"node_modules/\")",
+      "Bash(echo \"package-lock.json\")",
+      "Bash(echo \"\")",
+      "Bash(echo \"# Editor files\")",
+      "Bash(git config *)"
+    ]
+  }
+}
