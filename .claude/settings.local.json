@@ -7,7 +7,19 @@
       "Bash(echo \"package-lock.json\")",
       "Bash(echo \"\")",
       "Bash(echo \"# Editor files\")",
-      "Bash(git config *)"
+      "Bash(git config *)",
+      "Bash(git remote *)"
+    ],
+    "deny": [],
+    "ask": [
+      "Bash(gh pr create:*)",
+      "Bash(gh pr merge:*)",
+      "Bash(git commit:*)",     
+      "Bash(git push:*)",     
+      "Bash(git push --force:*)",
+      "Bash(git rebase:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(rm:*)"
     ]
   }
 }

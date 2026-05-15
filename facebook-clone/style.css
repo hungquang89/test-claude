@@ -5,6 +5,34 @@
  */
 
 /* Reset and base */
+
+:root {
+  --bg-color: #f0f2f5;
+  --text-color: #1c1e21;
+  --primary-color: #1877f2;
+  --nav-bg: #ffffff;
+  --nav-border: #dddfe2;
+  --input-bg: #f5f6f7;
+  --input-border: #ccd0d5;
+  --sidebar-bg: #ffffff;
+  --post-bg: #ffffff;
+  --btn-color: #606770;
+  --hover-bg: #f2f3f5;
+}
+
+.dark-mode {
+  --bg-color: #242526;
+  --text-color: #e4e6eb;
+  --nav-bg: #3a3b3c;
+  --nav-border: #555;
+  --input-bg: #3a3b3c;
+  --input-border: #555;
+  --sidebar-bg: #3a3b3c;
+  --post-bg: #3a3b3c;
+  --btn-color: #e4e6eb;
+  --hover-bg: #4a4b4d;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,6 +40,9 @@
 }
 
 body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
   font-family: 'Roboto', sans-serif;
   background-color: #f0f2f5;
   color: #1c1e21;
@@ -20,6 +51,8 @@ body {
 
 /* Navbar */
 .navbar {
+  background-color: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-border);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,6 +101,25 @@ body {
 }
 
 /* Main container layout */
+
+/* Spacing & typography improvements */
+.post,
+.create-post {
+  padding: 16px;
+}
+
+.sidebar-section {
+  margin-bottom: 24px;
+}
+
+.post-header {
+  margin-bottom: 12px;
+}
+
+.post-actions {
+  margin-top: 12px;
+}
+
 .container {
   display: flex;
   max-width: 1200px;
@@ -152,7 +204,7 @@ body {
 }
 
 .post {
-  background-color: #fff;
+  background-color: var(--post-bg);
   border-radius: 8px;
   padding: 12px;
   margin-bottom: 12px;
