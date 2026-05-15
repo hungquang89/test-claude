@@ -6,6 +6,12 @@
 document.addEventListener('DOMContentLoaded', () => {
   // === DOM References ===
   const createPostArea = document.querySelector('.create-post');
+
+// Tồp thậm đãng lựi cho dark mode toggle
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
   const postTextarea = document.querySelector('.post-textarea');
   const mainContent = document.querySelector('.main-content');
 

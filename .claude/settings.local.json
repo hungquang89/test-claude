@@ -8,14 +8,17 @@
       "Bash(echo \"\")",
       "Bash(echo \"# Editor files\")",
       "Bash(git config *)",
-      "Bash(git remote *)"
+      "Bash(git remote *)",
+      "Bash(cmdkey /list)",
+      "Bash(findstr github *)",
+      "Bash(gh pr *)"
     ],
     "deny": [],
     "ask": [
       "Bash(gh pr create:*)",
       "Bash(gh pr merge:*)",
-      "Bash(git commit:*)",     
-      "Bash(git push:*)",     
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
       "Bash(git push --force:*)",
       "Bash(git rebase:*)",
       "Bash(git reset --hard:*)",
